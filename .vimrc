@@ -1,7 +1,7 @@
 source $VIMRUNTIME/defaults.vim
 
 " CoC https://github.com/neoclide/coc.nvim
-source .vimrc_coc
+source ~/.dotfiles/.vimrc_coc
 
 " Show relative line numbers
 set relativenumber

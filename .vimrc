@@ -3,6 +3,18 @@ source $VIMRUNTIME/defaults.vim
 " CoC https://github.com/neoclide/coc.nvim
 source ~/.dotfiles/.vimrc_coc
 
+" Remap ESC to jk
+inoremap jk <esc>
+
+" Tab == 4 spaces
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Always show path/filename in status line
+set statusline+=%F
+
 " Show relative line numbers
 set relativenumber
 
@@ -16,14 +28,6 @@ hi FgCocErrorFloatBgCocFloating ctermfg=black
 " Highlight all matching search results
 set hlsearch
 
-" Remap ESC to jk
-inoremap jk <esc>
-
-" Tab == 4 spaces
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
 
 " Search
 set incsearch " show matches for patterns while they are being typed

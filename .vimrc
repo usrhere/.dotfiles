@@ -14,6 +14,7 @@ set smartindent
 
 " Always show path/filename in status line
 set statusline+=%F
+set laststatus=2
 
 " Show relative line numbers
 set relativenumber

@@ -1,0 +1,13 @@
+env:
+  TERM: xterm-256color
+
+bell:
+  #animation: EaseOutExpo
+  #color: '#000000'
+  #duration: 2
+  command: 
+    program: paplay
+    args: ["/usr/share/sounds/freedesktop/stereo/message.oga"]
+
+mouse:
+  hide_when_typing: true

@@ -118,6 +118,7 @@ bindsym $mod+F6 exec xbacklight -inc 1
 
 # mpc control
 #bindsym $mod+Escape+c exec mpd --host hpserver -q toggle
+
 # Lock the screen
 bindsym $mod+F7 exec swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg
 
@@ -125,7 +126,7 @@ bindsym $mod+F7 exec swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg
 bindsym $mod+F12 exec swaymsg input 2:14:ETPS/2_Elantech_Touchpad events toggle
 
 # Switch monitor input to USB-C 
-bindsym $mod+F11 exec ddcutil setvcp 60 0x1b 
+bindsym $mod+F11 exec ddcutil setvcp 60 0x1b &> /dev/null  
 
 # Take screenshot and save it to /tmp/{date_time}.png
 bindsym $mod+F9 exec grim -g "$(slurp)" /tmp/ss-$(date +"%d_%m_%y-%H_%M_%S").png
@@ -135,9 +136,8 @@ bindsym $mod+F1 exec amixer -q sset Master toggle
 bindsym $mod+F2 exec amixer -q sset Master 5%- 
 bindsym $mod+F3 exec amixer -q sset Master 5%+ 
 
-#
+
 # Ncmpcpp
-#
 bindsym $mod+c exec mpc toggle -h hpserver
 bindsym $mod+n exec mpc next -h hpserver
 bindsym $mod+p exec mpc prev -h hpserver

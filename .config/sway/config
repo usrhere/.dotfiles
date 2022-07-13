@@ -116,9 +116,6 @@ exec nextcloud
 bindsym $mod+F5 exec xbacklight -dec 1
 bindsym $mod+F6 exec xbacklight -inc 1
 
-# mpc control
-#bindsym $mod+Escape+c exec mpd --host hpserver -q toggle
-
 # Lock the screen
 bindsym $mod+F7 exec swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg
 
@@ -138,9 +135,9 @@ bindsym $mod+F3 exec amixer -q sset Master 5%+
 
 
 # Ncmpcpp
-bindsym $mod+c exec mpc toggle -h hpserver
-bindsym $mod+n exec mpc next -h hpserver
-bindsym $mod+p exec mpc prev -h hpserver
+bindsym $mod+c exec mpc toggle -h musicbox -q
+bindsym $mod+n exec mpc next -h musicbox -q
+bindsym $mod+p exec mpc prev -h musicbox -q
 
 #
 # Moving around:

@@ -1,8 +1,5 @@
 source $VIMRUNTIME/defaults.vim
 
-" CoC https://github.com/neoclide/coc.nvim
-source ~/.dotfiles/.vimrc_coc
-
 " Remap ESC to jk
 inoremap jk <esc>
 

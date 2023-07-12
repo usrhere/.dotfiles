@@ -17,7 +17,7 @@ set laststatus=2
 set relativenumber
 
 " Colors
-colorscheme ron
+" colorscheme ron
 " Make matching brackets more visible
 hi MatchParen cterm=bold ctermbg=black ctermfg=red
 " Make error messages more readable

@@ -77,6 +77,15 @@ input "2:14:ETPS/2_Elantech_TrackPoint" {
         pointer_accel 1.0
     }
 
+input "1133:16495:Logitech_MX_Ergo" {
+        # flat or adaptive
+        accel_profile adaptive
+        # between -1.0 and 1.0
+        pointer_accel -0.5
+        scroll_method on_button_down
+        scroll_button BTN_EXTRA
+    }
+
 ### Startup
 exec gammastep-indicator -l 47.55839:7.57327
 exec swaymsg input 2:14:ETPS/2_Elantech_Touchpad events disabled

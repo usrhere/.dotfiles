@@ -1,0 +1,9 @@
+[bell.command]
+args = ["/usr/share/sounds/freedesktop/stereo/message.oga"]
+program = "paplay"
+
+[env]
+TERM = "xterm-256color"
+
+[mouse]
+hide_when_typing = true

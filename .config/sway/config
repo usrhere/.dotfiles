@@ -40,8 +40,8 @@ bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
 output $laptop scale 1.1
-#output HDMI-A-1 mode 1920x1080 scale 0.9
-output HDMI-A-1 scale 1.4
+output HDMI-A-1  mode 3840x2560 scale 1.4
+output DP-1  mode 3240x2160@60Hz scale 1.4
 
 ### Idle configuration
 #
@@ -87,7 +87,7 @@ input "1133:16495:Logitech_MX_Ergo" {
     }
 
 ### Startup
-exec gammastep-indicator -l 47.55839:7.57327
+#exec gammastep-indicator -l 47.55839:7.57327
 exec swaymsg input 2:14:ETPS/2_Elantech_Touchpad events disabled
 exec nextcloud
 
@@ -132,7 +132,10 @@ bindsym $mod+F7 exec swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg
 bindsym $mod+F12 exec swaymsg input 2:14:ETPS/2_Elantech_Touchpad events toggle
 
 # Switch monitor input to USB-C 
-bindsym $mod+F11 exec ddcutil setvcp 60 0x1b &> /dev/null  
+# Dell monitor
+#bindsym $mod+F11 exec ddcutil setvcp 60 0x1b &> /dev/null
+# Benq RD280U monitor
+bindsym $mod+F11 exec ddcutil setvcp 60 0x13 &> /dev/null
 
 # Take screenshot and save it to /tmp/{date_time}.png
 bindsym $mod+F9 exec grim -g "$(slurp)" /tmp/ss-$(date +"%d_%m_%y-%H_%M_%S").png

@@ -47,11 +47,11 @@ output DP-1  mode 3240x2160@60Hz scale 1.4
 #
 # Example configuration:
 #
- exec swayidle -w \
-          timeout 60 'swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg' \
-          timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 000000'
-#
+exec swayidle -w \
+         timeout 60 'swaylock -f -s fill -i ~/.config/sway/pic/wp2.jpg' \
+         timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
